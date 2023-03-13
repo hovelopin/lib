@@ -1,0 +1,8 @@
+{
+  "name": "typescript-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hovelopin/typescript-utils.git",
+  "author": "KIMHOJIN <kimhojin3714@mcircle.biz>",
+  "license": "MIT"
+}
