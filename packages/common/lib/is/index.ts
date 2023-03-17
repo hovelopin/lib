@@ -3,5 +3,6 @@ export * from './isBoolean';
 export * from './isUndefined';
 export * from './isNull';
 export * from './isString';
+export * from './isObject';
 
 

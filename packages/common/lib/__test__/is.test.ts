@@ -1,4 +1,4 @@
-import { isArray , isBoolean, isNull } from "../is";
+import { isArray , isBoolean, isNull, isObject } from "../is";
 
 // Boolean 확인하는 테스트
 describe('Boolean이 맞는지 테스트하는 테스트 코드', () => {
@@ -43,5 +43,21 @@ describe('Null이 맞는지 테스트하는 테스트 코드', () => {
     expect(isNull(1)).toBe(false);
     expect(isNull({})).toBe(false); 
     expect(isNull(undefined)).toBe(false);
+  })
+})
+
+// 객체 확인하는 테스트
+describe('객체가 맞는지 테스트하는 테스트 코드' , () => {
+  it('true를 리턴합니다.', () => {
+    expect(isObject({name : 'hp' , age : 28})).toBe(true);
+    
+  })
+
+  it('false를 리턴합니다.', () => {
+    expect(isObject(new Date())).toBe(false);
+    expect(isObject(new Array())).toBe(false);
+    expect(isObject([])).toBe(false);
+    expect(isObject(() => {})).toBe(false);
+    expect(isObject(null)).toBe(false);
   })
 })
